@@ -1,11 +1,11 @@
 <div class="container">
   <h2>Categories</h2>
+  <a ui-sref="home">
+    <button class="nav-btn">← Back to Home</button>
+  </a>
   <ul>
     <li ng-repeat="item in $ctrl.items">
       <a ui-sref="items({ categoryShortName: item.short_name })">{{ item.name }}</a>
     </li>
   </ul>
-  <a ui-sref="home">
-    <button class="nav-btn">← Back to Home</button>
-  </a>
 </div>
