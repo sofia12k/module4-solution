@@ -1,8 +1,10 @@
-<div>
-  <h2>Menu Items</h2>
-  <ul>
-    <li ng-repeat="item in $ctrl.items">
-      <strong>{{ item.name }}</strong>: {{ item.description }}
-    </li>
-  </ul>
+<div class="container">
+  <h2>Items in Category</h2>
+  <div class="menu-item" ng-repeat="item in $ctrl.items">
+    <h3>{{ item.name }}</h3>
+    <p>{{ item.description }}</p>
+  </div>
+  <a ui-sref="categories">
+    <button class="nav-btn">← Back to Categories</button>
+  </a>
 </div>
