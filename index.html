@@ -16,32 +16,79 @@
   <script src="categories.controller.js"></script>
   <script src="items.controller.js"></script>
 
-  <style>
+   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
     }
-
+  
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+  
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    h1, h2 {
+      color: #343a40;
+      margin-bottom: 1rem;
+    }
+  
     a {
-      color: #1e90ff;
+      color: #007bff;
       text-decoration: none;
+      font-weight: 500;
     }
-
+  
     a:hover {
       text-decoration: underline;
     }
-
-    h1, h2 {
-      color: #333;
-    }
-
+  
     ul {
-      list-style-type: none;
+      list-style: none;
       padding: 0;
     }
-
+  
     li {
-      padding: 8px 0;
+      background-color: white;
+      border: 1px solid #dee2e6;
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+      border-radius: 0.5rem;
+      transition: background-color 0.2s ease-in-out;
+    }
+  
+    li:hover {
+      background-color: #f1f3f5;
+    }
+  
+    .category-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  
+    .item-description {
+      color: #6c757d;
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+    }
+  
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #adb5bd;
     }
   </style>
 </head>
